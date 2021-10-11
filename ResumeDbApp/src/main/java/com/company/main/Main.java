@@ -20,10 +20,8 @@ public class Main {//Java Database Connectivity = JDBC API Specification
         
         UserDaoInter userDao = Context.instanceUserDao();
         
-       User u= userDao.getById(2);
-        u.setName("Eldar");
-        userDao.updateUser(u);
         System.out.println(userDao.getAll());
+        
     }
 
 }

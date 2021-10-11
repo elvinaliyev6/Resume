@@ -5,8 +5,7 @@
  */
 package com.company.main;
 
-import com.company.bean.User;
-import com.company.dao.inter.UserDaoInter;
+import com.company.dao.inter.UserSkillDaoInter;
 
 /**
  *
@@ -18,9 +17,8 @@ public class Main {//Java Database Connectivity = JDBC API Specification
 
     public static void main(String[] args) throws Exception {
         
-        UserDaoInter userDao = Context.instanceUserDao();
-        
-        System.out.println(userDao.getAll());
+        UserSkillDaoInter userDao=Context.instanceUserSkillDao();
+        System.out.println(userDao.getAllSkillByUserId(6));
         
     }
 

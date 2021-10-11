@@ -5,8 +5,8 @@
  */
 package com.company.dao.impl;
 
-import com.company.bean.Country;
-import com.company.bean.User;
+import com.company.entity.Country;
+import com.company.entity.User;
 import com.company.dao.inter.AbstractDAO;
 import com.company.dao.inter.UserDaoInter;
 import java.sql.Connection;

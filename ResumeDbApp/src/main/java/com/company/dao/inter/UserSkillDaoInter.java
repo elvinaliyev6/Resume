@@ -5,7 +5,6 @@
  */
 package com.company.dao.inter;
 
-import com.company.entity.User;
 import com.company.entity.UserSkill;
 import java.util.List;
 
@@ -13,13 +12,6 @@ import java.util.List;
  *
  * @author Elvin
  */
-public interface UserDaoInter {
-    public List<User> getAll();
-    
-    public User getById(int id);
-    public boolean updateUser(User u);
-    public boolean addUser(User u);
-    
-    public boolean removeUser(int id);
-    
+public interface UserSkillDaoInter {
+    public List<UserSkill> getAllSkillByUserId(int userId);
 }

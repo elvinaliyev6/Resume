@@ -8,6 +8,10 @@ package com.company.dao.impl;
 import com.company.dao.inter.AbstractDAO;
 import com.company.dao.inter.CountryDaoInter;
 import com.company.entity.Country;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +22,24 @@ public class CountryDaoImpl extends AbstractDAO implements CountryDaoInter{
 
     @Override
     public List<Country> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<Country> list=new ArrayList<>();
+        try {
+            Connection c=connect();
+            PreparedStatement stmt=c.prepareStatement("select * from country");
+            stmt.execute();
+            ResultSet rs=stmt.getResultSet();
+            while(rs.next()){
+                int id=rs.getInt("id");
+                String name=rs.getString("name");
+                String nationality=rs.getString("nationality");
+                
+                list.add(new Country(id, name, nationality));
+            }
+            
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return list;
     }
     
 }

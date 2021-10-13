@@ -5,17 +5,12 @@
  */
 package com.company.dao.impl;
 
-import com.company.entity.Country;
-import com.company.entity.User;
 import com.company.dao.inter.AbstractDAO;
 import com.company.dao.inter.SkillDaoInter;
-import com.company.dao.inter.UserDaoInter;
 import com.company.entity.Skill;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +22,23 @@ public class SkillDaoImpl extends AbstractDAO implements SkillDaoInter {
 
     @Override
     public List<Skill> getAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<Skill> list = new ArrayList<>();
+        try {
+            Connection c = connect();
+            PreparedStatement stmt = c.prepareStatement("select * from skill");
+            stmt.execute();
+            
+            ResultSet rs = stmt.getResultSet();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+
+                list.add(new Skill(id, name));
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return list;
     }
 
-   
 }

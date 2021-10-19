@@ -11,6 +11,7 @@ import com.company.entity.Skill;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class SkillDaoImpl extends AbstractDAO implements SkillDaoInter {
             Connection c = connect();
             PreparedStatement stmt = c.prepareStatement("select * from skill");
             stmt.execute();
-            
+
             ResultSet rs = stmt.getResultSet();
             while (rs.next()) {
                 int id = rs.getInt("id");
@@ -41,4 +42,64 @@ public class SkillDaoImpl extends AbstractDAO implements SkillDaoInter {
         return list;
     }
 
+    @Override
+    public boolean addSkill(Skill skill) {
+        try (Connection c = connect()) {
+          PreparedStatement stmt = c.prepareStatement("insert into skill (name) values(?)");
+          stmt.setString(1, skill.getName());
+          return stmt.execute();
+        }
+         catch (Exception ex) {
+             ex.printStackTrace();
+         }
+        return false;
+    }
+
+    @Override
+    public boolean removeSkill(int id) {
+        try (Connection c = connect()) {
+            Statement stmt =c.createStatement();
+            return stmt.execute("delete from skill where id="+id);
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
+    public Skill getById(int id) {
+        Skill skill;
+        try(Connection c=connect()){
+            PreparedStatement stmt=c.prepareStatement("select * from skill where id=?");
+            stmt.setInt(1, id);
+            stmt.execute();
+            
+            ResultSet rs=stmt.getResultSet();
+            
+            while(rs.next()){
+                int skillId=rs.getInt("id");
+                String name=rs.getString("name");
+                
+                return new Skill(skillId, name);
+            }
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public boolean updateSkill(Skill skill) {
+        try(Connection c=connect()){
+            PreparedStatement stmt=c.prepareStatement("update skill set name=? where id=?");
+            stmt.setString(1, skill.getName());
+            stmt.setInt(2, skill.getId());
+            return stmt.execute();
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        return false;
+    }
+
 }
+

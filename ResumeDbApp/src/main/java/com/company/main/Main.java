@@ -9,6 +9,7 @@ import com.company.dao.impl.CountryDaoImpl;
 import com.company.dao.impl.SkillDaoImpl;
 import com.company.dao.inter.SkillDaoInter;
 import com.company.dao.inter.UserSkillDaoInter;
+import com.company.entity.Skill;
 
 /**
  *
@@ -20,9 +21,7 @@ public class Main {//Java Database Connectivity = JDBC API Specification
 
     public static void main(String[] args) throws Exception {
         
-        SkillDaoImpl dao=new SkillDaoImpl();
-        System.out.println(dao.getAll());
-        
+       
     }
 
 }

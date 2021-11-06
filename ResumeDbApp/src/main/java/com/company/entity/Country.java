@@ -5,19 +5,21 @@
  */
 package com.company.entity;
 
+import java.util.Objects;
+
 /**
  *
  * @author Elvin
  */
 public class Country {
-    private int id;
+    private Integer id;
     private String name;
     private String nationality;
 
     public Country() {
     }
 
-    public Country(int id, String name, String nationality) {
+    public Country(Integer id, String name, String nationality) {
         this.id = id;
         this.name = name;
         this.nationality = nationality;
@@ -27,7 +29,7 @@ public class Country {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -48,8 +50,35 @@ public class Country {
     }
 
     @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 41 * hash + Objects.hashCode(this.id);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Country other = (Country) obj;
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        return true;
+    }
+
+    
+    
+    @Override
     public String toString() {
-        return "Country{" + "id=" + id + ", name=" + name + ", nationality=" + nationality + '}';
+        return name + "(" + nationality+")";
     }
 
     

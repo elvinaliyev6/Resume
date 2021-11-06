@@ -24,4 +24,5 @@ public interface SkillDaoInter {
 
     public boolean updateSkill(Skill skill);
 
+    public List<Skill> getByName(String skillName);
 }

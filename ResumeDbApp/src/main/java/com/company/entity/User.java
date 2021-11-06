@@ -16,8 +16,10 @@ public class User {
     private int id;
     private String name;
     private String surname;
+    private String address;
     private String phone;
     private String email;
+    private String profileDesc;
     private Date birthDate;
     private Country nationality;
     private Country birthPlace;
@@ -32,7 +34,7 @@ public class User {
 
     
     
-    public User(int id, String name, String surname, String phone, String email, Date birthDate, Country nationality, Country birthPlace) {
+    public User(int id, String name, String surname, String phone, String email,String profileDesc,String address,Date birthDate, Country nationality, Country birthPlace) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -41,6 +43,8 @@ public class User {
         this.birthDate = birthDate;
         this.nationality = nationality;
         this.birthPlace = birthPlace;
+        this.profileDesc=profileDesc;
+        this.address=address;
     }
 
    
@@ -117,11 +121,26 @@ public class User {
         this.skills = skills;
     }
 
-    @Override
-    public String toString() {
-        return "User{" + "id=" + id + ", name=" + name + ", surname=" + surname + ", phone=" + phone + ", email=" + email + ", birthDate=" + birthDate + ", nationality=" + nationality + ", birthPlace=" + birthPlace+'}';
+    public String getProfileDesc() {
+        return profileDesc;
     }
 
-   
+    public void setProfileDesc(String profileDesc) {
+        this.profileDesc = profileDesc;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", name=" + name + ", surname=" + surname + ", address=" + address + ", phone=" + phone + ", email=" + email + ", profileDesc=" + profileDesc + ", birthDate=" + birthDate + ", nationality=" + nationality + ", birthPlace=" + birthPlace + ", skills=" + skills + '}';
+    }
+    
 
 }

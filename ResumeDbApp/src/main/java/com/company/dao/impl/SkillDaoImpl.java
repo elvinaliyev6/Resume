@@ -48,9 +48,15 @@ public class SkillDaoImpl extends AbstractDAO implements SkillDaoInter {
     @Override
     public boolean addSkill(Skill skill) {
         try (Connection c = connect()) {
-            PreparedStatement stmt = c.prepareStatement("insert into skill (name) values(?)");
+            PreparedStatement stmt = c.prepareStatement("insert into skill (name) values(?)",Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, skill.getName());
-            return stmt.execute();
+             stmt.execute();
+            
+            ResultSet generatedKeys=stmt.getGeneratedKeys();
+            if(generatedKeys.next()){
+            skill.setId(generatedKeys.getInt(1));
+            }
+            
         } catch (Exception ex) {
             ex.printStackTrace();
         }

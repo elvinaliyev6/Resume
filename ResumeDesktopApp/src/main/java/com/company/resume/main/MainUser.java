@@ -22,13 +22,13 @@ public class MainUser extends javax.swing.JFrame {
     private UserDaoInter userDao = Context.instanceUserDao();
 
     public MainUser() {
-        initComponents();
         Config.loggedInUser = userDao.getById(6);
+        initComponents();
         fillUserComponents();
         panelSkills.fillUserComponents();
-
         panelDetails.fillUserComponents();
         panelProfile.fillUserComponents();
+
     }
 
     public void fillUserComponents() {
@@ -48,7 +48,7 @@ public class MainUser extends javax.swing.JFrame {
     private void initComponents() {
 
         jSeparator1 = new javax.swing.JSeparator();
-        tpUserInfo = new javax.swing.JTabbedPane();
+        tabbedpane = new javax.swing.JTabbedPane();
         panelDetails = new com.company.resume.panel.DetailsPanel();
         panelProfile = new com.company.resume.panel.ProfilePanel();
         panelSkills = new com.company.resume.panel.SkillsPanel();
@@ -61,21 +61,9 @@ public class MainUser extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        tpUserInfo.addTab("Details", panelDetails);
-        tpUserInfo.addTab("Profile", panelProfile);
-
-        javax.swing.GroupLayout panelSkillsLayout = new javax.swing.GroupLayout(panelSkills);
-        panelSkills.setLayout(panelSkillsLayout);
-        panelSkillsLayout.setHorizontalGroup(
-            panelSkillsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 872, Short.MAX_VALUE)
-        );
-        panelSkillsLayout.setVerticalGroup(
-            panelSkillsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 349, Short.MAX_VALUE)
-        );
-
-        tpUserInfo.addTab("Skills", panelSkills);
+        tabbedpane.addTab("Details", panelDetails);
+        tabbedpane.addTab("Profile", panelProfile);
+        tabbedpane.addTab("Skills", panelSkills);
 
         txtSurname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,7 +98,7 @@ public class MainUser extends javax.swing.JFrame {
         pnlUserInfoLayout.setHorizontalGroup(
             pnlUserInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlUserInfoLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(42, 42, 42)
                 .addGroup(pnlUserInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pnlUserInfoLayout.createSequentialGroup()
                         .addComponent(lblSurname, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -122,12 +110,11 @@ public class MainUser extends javax.swing.JFrame {
                         .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(30, 30, 30)
                 .addComponent(btnSave)
-                .addContainerGap(471, Short.MAX_VALUE))
+                .addContainerGap(444, Short.MAX_VALUE))
         );
         pnlUserInfoLayout.setVerticalGroup(
             pnlUserInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlUserInfoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(pnlUserInfoLayout.createSequentialGroup()
                 .addGroup(pnlUserInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -136,7 +123,7 @@ public class MainUser extends javax.swing.JFrame {
                     .addComponent(btnSave)
                     .addComponent(lblSurname, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtSurname, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31))
+                .addGap(0, 16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -144,7 +131,7 @@ public class MainUser extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator1)
-            .addComponent(tpUserInfo)
+            .addComponent(tabbedpane, javax.swing.GroupLayout.DEFAULT_SIZE, 887, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(pnlUserInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -154,11 +141,11 @@ public class MainUser extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pnlUserInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(pnlUserInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tpUserInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(tabbedpane, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -235,7 +222,7 @@ public class MainUser extends javax.swing.JFrame {
     private com.company.resume.panel.ProfilePanel panelProfile;
     private com.company.resume.panel.SkillsPanel panelSkills;
     private javax.swing.JPanel pnlUserInfo;
-    private javax.swing.JTabbedPane tpUserInfo;
+    private javax.swing.JTabbedPane tabbedpane;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtSurname;
     // End of variables declaration//GEN-END:variables

@@ -27,6 +27,7 @@ public class UserSkillDaoImpl extends AbstractDAO implements UserSkillDaoInter {
         List<UserSkill> result = new ArrayList<>();
         try (Connection c = connect()) {
             PreparedStatement stmt = c.prepareStatement("SELECT"
+                    + " us.id as userSkillId,"
                     + "	u.*,"
                     + "	us.skill_id,"
                     + "	s.`name` AS skill_name,"
@@ -53,6 +54,7 @@ public class UserSkillDaoImpl extends AbstractDAO implements UserSkillDaoInter {
     }
 
     private UserSkill getUserSkill(ResultSet rs) throws Exception {
+        int userSkillId = rs.getInt("userSkillId");
         int userId = rs.getInt("id");
         int skillId = rs.getInt("skill_id");
         String skillName = rs.getString("skill_name");
@@ -60,8 +62,51 @@ public class UserSkillDaoImpl extends AbstractDAO implements UserSkillDaoInter {
 
         User user = new User(userId);
         Skill skill = new Skill(skillId, skillName);
-        return new UserSkill(null, user, skill, power);
+        return new UserSkill(userSkillId, user, skill, power);
 
+    }
+
+    @Override
+    public boolean removeUserSkill(int id) {
+        try (Connection c = connect()) {
+            PreparedStatement stmt = c.prepareStatement("delete from user_skill where id=?");
+            stmt.setInt(1, id);
+            return stmt.execute();
+        } catch (Exception ex) {
+            ex.printStackTrace();;
+            return false;
+        }
+    }
+
+    @Override
+    public boolean insertUserSkill(UserSkill u) {
+        try(Connection c=connect()){
+            PreparedStatement stmt=c.prepareStatement("insert into user_skill (user_id, skill_id, power) values(?,?,?)");
+            stmt.setInt(1,u.getUser().getId());
+            stmt.setInt(2,u.getSkill().getId());
+            stmt.setInt(3,u.getPower());
+            return stmt.execute();
+        }catch(Exception ex){
+            ex.printStackTrace();
+            return false;
+        }
+    }
+
+    @Override
+    public boolean updateUserSkill(UserSkill u) {
+        try(Connection c=connect()){
+            PreparedStatement stmt=c.prepareStatement("update user_skill set skill_id=?,user_id=?, power=? where id=?");
+            
+            stmt.setInt(1, u.getSkill().getId());
+            stmt.setInt(2, u.getUser().getId());
+            stmt.setInt(3, u.getPower());
+            stmt.setInt(4, u.getId());
+            
+            return stmt.execute();
+        }catch(Exception ex){
+            ex.printStackTrace();
+            return false;
+        }
     }
 
 }

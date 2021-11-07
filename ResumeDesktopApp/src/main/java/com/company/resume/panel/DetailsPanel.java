@@ -26,8 +26,13 @@ public class DetailsPanel extends javax.swing.JPanel {
     private CountryDaoInter countryDao = Context.instanceCountryDao();
     
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+    
+    public DetailsPanel() {
+        initComponents();
+    }
 
     public void fillUserComponents() {
+        fillWindow();
         User loggedInUser=Config.loggedInUser;
         txtAddress.setText(loggedInUser.getAddress());
         txtEmail.setText(loggedInUser.getEmail());
@@ -65,10 +70,7 @@ public class DetailsPanel extends javax.swing.JPanel {
         }
     }
     
-    public DetailsPanel() {
-        initComponents();
-        fillWindow();
-    }
+    
     
     private void fillWindow() {
         List<Country> countries = countryDao.getAll();

@@ -8,7 +8,6 @@ package com.company.entity;
 import java.sql.Date;
 
 /**
- *
  * @author Elvin
  */
 public class EmploymentHistory {
@@ -84,7 +83,5 @@ public class EmploymentHistory {
         return "EmploymentHistory{" + "id=" + id + ", header=" + header + ", beginDate=" + beginDate + ", endDate=" + endDate + ", jobDescription=" + jobDescription + ", user=" + user + '}';
     }
 
-   
-    
-    
+
 }

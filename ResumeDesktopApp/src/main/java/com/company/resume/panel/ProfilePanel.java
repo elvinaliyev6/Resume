@@ -9,7 +9,6 @@ import com.company.entity.User;
 import com.company.resume.config.Config;
 
 /**
- *
  * @author Hp
  */
 public class ProfilePanel extends javax.swing.JPanel {
@@ -20,12 +19,12 @@ public class ProfilePanel extends javax.swing.JPanel {
     public ProfilePanel() {
         initComponents();
     }
-    
+
     public void fillUserComponents() {
         txtAreaProfile.setText(Config.loggedInUser.getProfileDesc());
     }
-    
-    public void fillUser(User user){
+
+    public void fillUser(User user) {
         user.setProfileDesc(txtAreaProfile.getText());
     }
 
@@ -48,12 +47,12 @@ public class ProfilePanel extends javax.swing.JPanel {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 

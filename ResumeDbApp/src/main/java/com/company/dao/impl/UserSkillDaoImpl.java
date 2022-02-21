@@ -10,6 +10,7 @@ import com.company.entity.User;
 import com.company.entity.UserSkill;
 import com.company.dao.inter.AbstractDAO;
 import com.company.dao.inter.UserSkillDaoInter;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author Elvin Data Access Object
  */
 public class UserSkillDaoImpl extends AbstractDAO implements UserSkillDaoInter {
@@ -73,20 +73,21 @@ public class UserSkillDaoImpl extends AbstractDAO implements UserSkillDaoInter {
             stmt.setInt(1, id);
             return stmt.execute();
         } catch (Exception ex) {
-            ex.printStackTrace();;
+            ex.printStackTrace();
+            ;
             return false;
         }
     }
 
     @Override
     public boolean insertUserSkill(UserSkill u) {
-        try(Connection c=connect()){
-            PreparedStatement stmt=c.prepareStatement("insert into user_skill (user_id, skill_id, power) values(?,?,?)");
-            stmt.setInt(1,u.getUser().getId());
-            stmt.setInt(2,u.getSkill().getId());
-            stmt.setInt(3,u.getPower());
+        try (Connection c = connect()) {
+            PreparedStatement stmt = c.prepareStatement("insert into user_skill (user_id, skill_id, power) values(?,?,?)");
+            stmt.setInt(1, u.getUser().getId());
+            stmt.setInt(2, u.getSkill().getId());
+            stmt.setInt(3, u.getPower());
             return stmt.execute();
-        }catch(Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return false;
         }
@@ -94,16 +95,16 @@ public class UserSkillDaoImpl extends AbstractDAO implements UserSkillDaoInter {
 
     @Override
     public boolean updateUserSkill(UserSkill u) {
-        try(Connection c=connect()){
-            PreparedStatement stmt=c.prepareStatement("update user_skill set skill_id=?,user_id=?, power=? where id=?");
-            
+        try (Connection c = connect()) {
+            PreparedStatement stmt = c.prepareStatement("update user_skill set skill_id=?,user_id=?, power=? where id=?");
+
             stmt.setInt(1, u.getSkill().getId());
             stmt.setInt(2, u.getUser().getId());
             stmt.setInt(3, u.getPower());
             stmt.setInt(4, u.getId());
-            
+
             return stmt.execute();
-        }catch(Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return false;
         }

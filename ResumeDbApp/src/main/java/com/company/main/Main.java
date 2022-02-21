@@ -8,15 +8,14 @@ package com.company.main;
 import com.company.dao.inter.CountryDaoInter;
 
 /**
- *
  * @author Elvin
  */
 //loosely coupling
 //thightly coupling
-public class Main{//Java Database Connectivity = JDBC API Specification
+public class Main {//Java Database Connectivity = JDBC API Specification
 
     public static void main(String[] args) throws Exception {
-        CountryDaoInter countryDao=Context.instanceCountryDao();
+        CountryDaoInter countryDao = Context.instanceCountryDao();
         System.out.println(countryDao.removeCountry(2));
     }
 

@@ -6,7 +6,6 @@
 package com.company.entity;
 
 /**
- *
  * @author Elvin
  */
 public class Skill {
@@ -41,7 +40,6 @@ public class Skill {
     public String toString() {
         return name;
     }
-    
-    
-    
+
+
 }

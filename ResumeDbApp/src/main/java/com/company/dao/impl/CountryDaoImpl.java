@@ -8,6 +8,7 @@ package com.company.dao.impl;
 import com.company.dao.inter.AbstractDAO;
 import com.company.dao.inter.CountryDaoInter;
 import com.company.entity.Country;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,7 +19,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
  * @author Elvin
  */
 public class CountryDaoImpl extends AbstractDAO implements CountryDaoInter {
@@ -26,7 +26,7 @@ public class CountryDaoImpl extends AbstractDAO implements CountryDaoInter {
     @Override
     public List<Country> getAll() {
         List<Country> list = new ArrayList<>();
-        try(Connection c = connect()) {
+        try (Connection c = connect()) {
             PreparedStatement stmt = c.prepareStatement("select * from country");
             stmt.execute();
             ResultSet rs = stmt.getResultSet();
@@ -46,15 +46,15 @@ public class CountryDaoImpl extends AbstractDAO implements CountryDaoInter {
 
     @Override
     public Country getById(int id) {
-        try(Connection con = connect()) {
+        try (Connection con = connect()) {
             Statement stmt = con.createStatement();
             stmt.execute("select * from country where id=" + id);
-            
+
             ResultSet rs = stmt.getResultSet();
             while (rs.next()) {
                 String name = rs.getString("name");
                 String nationality = rs.getString("nationality");
-                int countrId=rs.getInt("id");
+                int countrId = rs.getInt("id");
                 return new Country(countrId, name, nationality);
             }
 
@@ -66,7 +66,7 @@ public class CountryDaoImpl extends AbstractDAO implements CountryDaoInter {
 
     @Override
     public boolean updateCountry(Country u) {
-        try(Connection con = connect()) {
+        try (Connection con = connect()) {
             PreparedStatement stmt = con.prepareStatement("update country set name=?,nationality=? where id=?");
             stmt.setString(1, u.getName());
             stmt.setString(2, u.getNationality());
@@ -78,14 +78,14 @@ public class CountryDaoImpl extends AbstractDAO implements CountryDaoInter {
         }
     }
 
-      @Override
+    @Override
     public boolean removeCountry(int id) {
-        try(Connection c=connect()){
-           Statement stmt=c.createStatement();
-           return stmt.execute("delete from country where id="+id);
+        try (Connection c = connect()) {
+            Statement stmt = c.createStatement();
+            return stmt.execute("delete from country where id=" + id);
         } catch (Exception ex) {
-        ex.printStackTrace();
-        return false;
+            ex.printStackTrace();
+            return false;
         }
     }
 

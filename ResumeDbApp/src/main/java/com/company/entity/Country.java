@@ -8,7 +8,6 @@ package com.company.entity;
 import java.util.Objects;
 
 /**
- *
  * @author Elvin
  */
 public class Country {
@@ -74,12 +73,11 @@ public class Country {
         return true;
     }
 
-    
-    
+
     @Override
     public String toString() {
-        return name + "(" + nationality+")";
+        return name + "(" + nationality + ")";
     }
 
-    
+
 }

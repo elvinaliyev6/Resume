@@ -9,7 +9,6 @@ import java.sql.Date;
 import java.util.List;
 
 /**
- *
  * @author Elvin
  */
 public class User {
@@ -24,7 +23,7 @@ public class User {
     private Country nationality;
     private Country birthPlace;
     private List<UserSkill> skills;
-    
+
     public User() {
     }
 
@@ -32,9 +31,8 @@ public class User {
         this.id = id;
     }
 
-    
-    
-    public User(int id, String name, String surname, String phone, String email,String profileDesc,String address,Date birthDate, Country nationality, Country birthPlace) {
+
+    public User(int id, String name, String surname, String phone, String email, String profileDesc, String address, Date birthDate, Country nationality, Country birthPlace) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -43,11 +41,10 @@ public class User {
         this.birthDate = birthDate;
         this.nationality = nationality;
         this.birthPlace = birthPlace;
-        this.profileDesc=profileDesc;
-        this.address=address;
+        this.profileDesc = profileDesc;
+        this.address = address;
     }
 
-   
 
     public int getId() {
         return id;
@@ -141,6 +138,6 @@ public class User {
     public String toString() {
         return "User{" + "id=" + id + ", name=" + name + ", surname=" + surname + ", address=" + address + ", phone=" + phone + ", email=" + email + ", profileDesc=" + profileDesc + ", birthDate=" + birthDate + ", nationality=" + nationality + ", birthPlace=" + birthPlace + ", skills=" + skills + '}';
     }
-    
+
 
 }

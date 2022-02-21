@@ -8,6 +8,7 @@ package com.company.dao.impl;
 import com.company.dao.inter.AbstractDAO;
 import com.company.dao.inter.SkillDaoInter;
 import com.company.entity.Skill;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -19,7 +20,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
  * @author Elvin Data Access Object
  */
 public class SkillDaoImpl extends AbstractDAO implements SkillDaoInter {
@@ -48,15 +48,15 @@ public class SkillDaoImpl extends AbstractDAO implements SkillDaoInter {
     @Override
     public boolean addSkill(Skill skill) {
         try (Connection c = connect()) {
-            PreparedStatement stmt = c.prepareStatement("insert into skill (name) values(?)",Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement stmt = c.prepareStatement("insert into skill (name) values(?)", Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, skill.getName());
-             stmt.execute();
-            
-            ResultSet generatedKeys=stmt.getGeneratedKeys();
-            if(generatedKeys.next()){
-            skill.setId(generatedKeys.getInt(1));
+            stmt.execute();
+
+            ResultSet generatedKeys = stmt.getGeneratedKeys();
+            if (generatedKeys.next()) {
+                skill.setId(generatedKeys.getInt(1));
             }
-            
+
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -124,7 +124,7 @@ public class SkillDaoImpl extends AbstractDAO implements SkillDaoInter {
                 list.add(new Skill(id, name));
             }
         } catch (Exception ex) {
-           ex.printStackTrace();
+            ex.printStackTrace();
         }
         return list;
     }

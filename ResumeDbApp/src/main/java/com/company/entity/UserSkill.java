@@ -6,7 +6,6 @@
 package com.company.entity;
 
 /**
- *
  * @author Elvin
  */
 public class UserSkill {
@@ -61,7 +60,6 @@ public class UserSkill {
     public String toString() {
         return "UserSkill{" + "id=" + id + ", user=" + user + ", skill=" + skill + ", power=" + power + '}';
     }
-    
-    
-    
+
+
 }

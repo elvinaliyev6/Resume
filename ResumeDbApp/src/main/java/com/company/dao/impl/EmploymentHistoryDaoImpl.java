@@ -9,6 +9,7 @@ import com.company.dao.inter.AbstractDAO;
 import com.company.dao.inter.EmploymentHistoryDaoInter;
 import com.company.entity.EmploymentHistory;
 import com.company.entity.User;
+
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -17,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author Elvin Data Access Object
  */
 public class EmploymentHistoryDaoImpl extends AbstractDAO implements EmploymentHistoryDaoInter {
@@ -43,12 +43,12 @@ public class EmploymentHistoryDaoImpl extends AbstractDAO implements EmploymentH
     }
 
     private EmploymentHistory getEmploymentHistory(ResultSet rs) throws Exception {
-        String header=rs.getString("header");
-        String jobDescription=rs.getString("job_description");
-        Date beginDate=rs.getDate("begin_date");
-        Date endDate=rs.getDate("end_date");
-        int userId=rs.getInt("user_id");
-        EmploymentHistory emp=new EmploymentHistory(null, header, beginDate, endDate, jobDescription, new User(userId));
+        String header = rs.getString("header");
+        String jobDescription = rs.getString("job_description");
+        Date beginDate = rs.getDate("begin_date");
+        Date endDate = rs.getDate("end_date");
+        int userId = rs.getInt("user_id");
+        EmploymentHistory emp = new EmploymentHistory(null, header, beginDate, endDate, jobDescription, new User(userId));
         return emp;
     }
 

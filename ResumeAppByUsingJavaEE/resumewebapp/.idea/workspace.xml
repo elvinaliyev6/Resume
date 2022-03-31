@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="resumewebapp:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="044408d9-fbe0-467e-a131-51c5c955f8b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/src/main/java/com/company/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/src/main/java/com/company/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/src/main/java/com/company/dao/inter/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/src/main/java/com/company/dao/inter/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/ResumeDbApp-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/ResumeDbApp-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/CountryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/CountryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/EmploymentHistoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/EmploymentHistoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/SkillDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/SkillDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/UserSkillDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/impl/UserSkillDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/AbstractDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/AbstractDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/CountryDaoInter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/CountryDaoInter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/EmploymentHistoryDaoInter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/EmploymentHistoryDaoInter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/SkillDaoInter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/SkillDaoInter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/UserDaoInter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/UserDaoInter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/UserSkillDaoInter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/dao/inter/UserSkillDaoInter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/EmploymentHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/EmploymentHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/Skill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/UserSkill.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/entity/UserSkill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/main/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/main/Context.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/classes/com/company/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbApp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbApp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/resume/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/resume/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/resume/controller/UserDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/resume/controller/UserDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/resume/controller/UserDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/resume/controller/UserDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resumewebapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/resumewebapp.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resumewebapp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resumewebapp/WEB-INF/classes/com/company/resume/controller/UserDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/resumewebapp/WEB-INF/classes/com/company/resume/controller/UserDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resumewebapp/WEB-INF/lib/ResumeDbApp-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resumewebapp/users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/resumewebapp/users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/java/com/company/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/java/com/company/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/java/com/company/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/java/com/company/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/java/com/company/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/java/com/company/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/ResumeDbApp-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/com/company/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/com/company/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/com/company/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/com/company/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/com/company/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/classes/com/company/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/Country_.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/Country_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/EmploymentHistory_.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/EmploymentHistory_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/Skill_.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/Skill_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/UserSkill_.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/UserSkill_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/User_.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/generated-sources/annotations/com/company/entity/User_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/ResumeDbApp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/ErrorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/ErrorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/UserDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/controller/UserDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/filter/JspFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/filter/JspFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/filter/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/filter/SecurityFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/util/ControllerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../jpa/resumewebapp/target/classes/com/company/resume/util/ControllerUtil.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25guc1DgZwZvneX6yNJQxtVewfv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.resume.filter" />
+      <recent name="com.company.resume.controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="openRunningConfigInTab" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.55" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.55" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="resumewebapp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/resume" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="50a86c88-8ee5-4e9d-877c-659cbd4ff09b" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50097" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="resumeAppUsingJavaEE:war exploded" />
+          <artifact name="resumewebapp:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="044408d9-fbe0-467e-a131-51c5c955f8b9" name="Changes" comment="" />
+      <created>1645961127539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645961127539</updated>
+      <workItem from="1645961128788" duration="279000" />
+      <workItem from="1646027425382" duration="707000" />
+      <workItem from="1646044806758" duration="8040000" />
+      <workItem from="1646062472121" duration="268000" />
+      <workItem from="1646111735621" duration="71000" />
+      <workItem from="1646835312222" duration="143000" />
+      <workItem from="1646835852362" duration="47000" />
+      <workItem from="1647444034233" duration="1511000" />
+      <workItem from="1647446768806" duration="1736000" />
+      <workItem from="1647586797074" duration="583000" />
+      <workItem from="1647629703369" duration="270000" />
+      <workItem from="1647933282700" duration="2269000" />
+      <workItem from="1648032966511" duration="937000" />
+      <workItem from="1648104364034" duration="1997000" />
+      <workItem from="1648119625517" duration="3005000" />
+      <workItem from="1648271304006" duration="1635000" />
+      <workItem from="1648278229163" duration="440000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

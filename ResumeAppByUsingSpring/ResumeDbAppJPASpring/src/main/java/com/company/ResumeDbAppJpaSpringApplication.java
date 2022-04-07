@@ -1,7 +1,6 @@
 package com.company;
 
 import com.company.dao.impl.UserRepository;
-import com.company.entity.User;
 import com.company.service.inter.UserServiceInter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -9,8 +8,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
-
-import java.util.List;
 
 @SpringBootApplication
 @EnableCaching
@@ -41,27 +38,27 @@ public class ResumeDbAppJpaSpringApplication {
 //	}
 
 
-	@Autowired
-	UserRepository repo;
-
-	@Autowired
-	UserServiceInter userService;
+//	@Autowired
+//	UserRepository repo;
+//
+//	@Autowired
+//	UserServiceInter userService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ResumeDbAppJpaSpringApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner run() {
-		CommandLineRunner clr = new CommandLineRunner() {
-			@Override
-			public void run(String... args) throws Exception {
-				for(int i=0;i<10;i++){
-					userService.getAll(null,null,null);
-				}
-			}
-		};
-		return clr;
-
-	}
+//	@Bean
+//	public CommandLineRunner run() {
+//		CommandLineRunner clr = new CommandLineRunner() {
+//			@Override
+//			public void run(String... args) throws Exception {
+//				for(int i=0;i<10;i++){
+//					userService.getAll(null,null,null);
+//				}
+//			}
+//		};
+//		return clr;
+//
+//	}
 }

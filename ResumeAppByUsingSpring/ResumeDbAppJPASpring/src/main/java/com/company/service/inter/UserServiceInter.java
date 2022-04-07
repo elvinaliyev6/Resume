@@ -6,12 +6,14 @@
 package com.company.service.inter;
 
 import com.company.entity.User;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * @author Elvin
  */
+
 public interface UserServiceInter {
     public List<User> getAll(String name, String surname, Integer nationalityId);
 

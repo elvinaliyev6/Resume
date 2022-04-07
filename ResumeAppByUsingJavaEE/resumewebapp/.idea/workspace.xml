@@ -10,46 +10,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="044408d9-fbe0-467e-a131-51c5c955f8b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/assets/css/users.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/assets/js/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/userdetail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/resumewebapp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/resumewebapp_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/java/com/company/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/example.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resumewebapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/resumewebapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/ResumeDbAppJpaSpringApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/CountryDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/EmploymentHistoryDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/SkillDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepositoryCustom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepositoryCustomImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserSkillDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/AbstractDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/CountryDaoInter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/EmploymentHistoryDaoInter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/SkillDaoInter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/UserSkillDaoInter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/Country.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/EmploymentHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/Skill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/UserSkill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/java/com/company/service/inter/UserServiceInter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ResumeDbAppJPASpring/ResumeDbAppJPASpring/src/test/java/com/company/ResumeDbAppJpaSpringApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resumewebapp/WEB-INF/lib/ResumeDbApp-0.1-jpa.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/resumewebapp/WEB-INF/lib/ResumeDbApp-0.1-jpa.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/ResumeAppByUsingSpring.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/artifacts/resumewebapp_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/artifacts/resumewebapp_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/ResumeDbAppJpaSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/ResumeDbAppJpaSpringApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/CountryDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/EmploymentHistoryDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/SkillDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepositoryCustom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepositoryCustomImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserSkillDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/AbstractDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/CountryDaoInter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/EmploymentHistoryDaoInter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/SkillDaoInter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/dao/inter/UserSkillDaoInter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/EmploymentHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/Skill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/entity/UserSkill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/main/java/com/company/service/inter/UserServiceInter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/test/java/com/company/ResumeDbAppJpaSpringApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/ResumeDbAppJPASpring/src/test/java/com/company/ResumeDbAppJpaSpringApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/java/com/company/resumewebapp/ResumewebappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/java/com/company/ResumewebappApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/java/com/company/resumewebapp/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/java/com/company/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/assets/css/users.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/assets/css/users.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/assets/js/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/assets/js/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/userdetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/userdetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/main/webapp/WEB-INF/users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResumeAppByUsingSpring/resumewebapp/src/test/java/com/company/resumewebapp/ResumewebappApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +117,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ResumeAppByUsingSpring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -240,6 +249,11 @@
       <workItem from="1648271304006" duration="1635000" />
       <workItem from="1648278229163" duration="440000" />
       <workItem from="1649146582439" duration="1305000" />
+      <workItem from="1649230766428" duration="1795000" />
+      <workItem from="1649307196096" duration="1178000" />
+      <workItem from="1649319643755" duration="293000" />
+      <workItem from="1649330601730" duration="46000" />
+      <workItem from="1649349419892" duration="437000" />
     </task>
     <servers />
   </component>

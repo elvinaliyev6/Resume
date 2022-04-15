@@ -47,7 +47,7 @@ public class UserRepositoryCustomImpl implements UserRepositoryCustom {
         }
 
         if (surname != null && !surname.trim().isEmpty()) {
-            jpql += "and  u.surname=:surname";
+            jpql += " and  u.surname=:surname";
         }
 
         if (nationalityId != null) {
@@ -145,32 +145,30 @@ public class UserRepositoryCustomImpl implements UserRepositoryCustom {
     //native sql query
     @Override
     public User findByEmail(String email) {
-
-        Query query = em.createNativeQuery("select * from user where email=?", User.class);
-
-        query.setParameter("1", email);
+        Query query= em.createNativeQuery("select * from user where email = ?", User.class);
+        query.setParameter(1, email);
 
         List<User> list = query.getResultList();
         if (list.size() == 1) {
             return list.get(0);
         }
+
         return null;
     }
     
-    /*
-     @Override
-    public User findByEmail(String email) {
-        Query q = em.createQuery("select u from User u where u.email=:e", User.class);
-        q.setParameter("e", email);
 
-        List<User> list = q.getResultList();
-        if (list.size() == 1) {
-            return list.get(0);
-        }
-        System.out.println("salam");
-        return null;
-    }
-     */
+//     @Override
+//    public User findByEmail(String email) {
+//        Query q = em.createQuery("select u from User u where u.email=:e", User.class);
+//        q.setParameter("e", email);
+//
+//        List<User> list = q.getResultList();
+//        if (list.size() == 1) {
+//            return list.get(0);
+//        }
+//        return null;
+//    }
+
 
     @Override
     public boolean updateUser(User u) {

@@ -1,55 +1,73 @@
-<%@page import="com.company.entity.User" %>
-<%@page import="java.util.List" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="../assets/css/users.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script type="text/javascript" src="../assets/js/users.js"></script>
-
+    <link rel="stylesheet" href="assets/css/users.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+    <script src="assets/js/users.js"></script>
     <title>JSP Page</title>
 </head>
 <body>
-<%--    <jsp:include page="header.jsp"/>--%>
-<%@include file="header.jsp" %>
-<%
-    List<User> list =( List<User>) request.getAttribute("list");
-%>
+
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+<%--<%@ include file="header.jsp" %>--%>
+<%--<jsp:include page="header.jsp" />--%>
+
 <div class="container">
+    hey!!!
     <div class="row">
         <div class="col-4">
-            <form action="users.jsp" method="GET">
-                <div class="form-group">
-                    <label> name: </label>
-                    <input onkeyup="writeWhatIamTyping()"
-                           placeholder="Enter your name" type="text" class="form-control" name="name" value=""/>
 
+            <f:form action="usersm" method="GET" modelAttribute="user">
+                <div class="form-group">
+
+                    <f:input onkeyup="writeWhatIamTyping()"
+                           path="name"
+                           placeholder="Enter name"
+                           class="form-control"/>
+                    <form:errors path="name" cssClass="error" />
                 </div>
                 <div class="form-group">
-                    <label> surname: </label>
-                    <input placeholder="Enter your surname" type="text" class="form-control" name="surname" value=""/>
+
+                    <f:input
+                            path="surname"
+                            placeholder="Enter surname"
+                            class="form-control"/>
+                    <form:errors path="surname" cssClass="error" />
                 </div>
 
-                <input visible="true" type="submit" class="btn btn-primary" name="search" value="Search"
-                       id="btnsearch"/>
+                <f:button class="btn btn-primary" type="submit" id="btnsearch">
+                    Search
+                </f:button>
 
-            </form>
+            </f:form>
+
         </div>
     </div>
+
+
     <div>
         <table class="table">
             <thead>
@@ -62,39 +80,37 @@
             </tr>
             </thead>
             <tbody>
-            <%
-                for (User u : list) {
-            %>
-            <tr>
-                <td><%=u.getName()%>
-                </td>
-                <td><%=u.getSurname()%>
-                </td>
-                <td><%=u.getNationality().getName() == null ? "N/A" : u.getNationality().getName()%>
-                </td>
-                <td style="width: 5px">
-                    <input type="hidden" name="id" value="<%=u.getId()%>"/>
-                    <input type="hidden" name="action" value="delete"/>
-                    <button type="submit" class="btn btn-danger" value="delete"
-                            data-toggle="modal" data-target="#exampleModal" onclick="setIdForDelete(<%=u.getId()%>)">
-                        <i class="far fa-trash-alt"></i>
-                    </button>
-                </td>
-                <td style="width: 5px">
-                    <form action="userdetail" method="GET">
-                        <input type="hidden" name="id" value="<%=u.getId()%>"/>
-                        <input type="hidden" name="action" value="update"/>
-                        <button type="submit" class="btn btn-secondary" value="update">
-                            <i class="fas fa-pen-alt"></i>
-                        </button>
-                    </form>
-                </td>
-            </tr>
-            <%}%>
+            <c:forEach items="${users}" var="u">
+                <tr>
+                    <td>${u.name}</td>
+                    <td>${u.surname}</td>
+                    <td>${u.nationality.name}</td>
+                    <td style="width:5px">
 
+                        <input type="hidden" name="id" value="${u.id}"/>
+                        <input type="hidden" name="action" value="delete"/>
+                        <button class="btn btn-danger" type="submit" value="delete"
+                                data-toggle="modal" data-target="#exampleModal"
+                                onclick="setIdForDelete(${u.id})">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                    <td style="width:5px">
+                        <form action="userdetail" method="GET">
+                            <input type="hidden" name="id" value="${u.id}"/>
+                            <input type="hidden" name="action" value="update"/>
+                            <button class="btn btn-secondary" type="submit" value="update">
+                                <i class="fas fa-pen-square"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            </c:forEach>
             </tbody>
         </table>
+
     </div>
+
 </div>
 
 
@@ -114,12 +130,11 @@
             </div>
             <div class="modal-footer">
                 <form action="userdetail" method="POST">
-                    <input type="hidden" name="id" value="" id="idForDelete">
-                    <input type="hidden" name="action" value="delete">
+                    <input type="hidden" name="id" value="" id="idForDelete"/>
+                    <input type="hidden" name="action" value="delete"/>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <input type="submit" class="btn btn-danger" value="delete"/>
+                    <input type="submit" class="btn btn-danger" value="Delete"/>
                 </form>
-
             </div>
         </div>
     </div>

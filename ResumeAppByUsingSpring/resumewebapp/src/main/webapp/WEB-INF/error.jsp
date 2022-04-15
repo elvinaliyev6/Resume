@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>why are you here?##</title>
+    <title>why are you here?</title>
 </head>
 <body>
         <center><%=request.getParameter("msg")%></center>

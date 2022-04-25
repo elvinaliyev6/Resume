@@ -1,4 +1,4 @@
-package com.company;
+package com.company.security;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

@@ -34,6 +34,7 @@ public class UserRestController {
 
         return ResponseEntity.ok(ResponseDTO.of(userDTOS));
 //        return  ResponseEntity.status(HttpStatus.OK).body(userDTOS);
+
     }
 
     @GetMapping("/foo")

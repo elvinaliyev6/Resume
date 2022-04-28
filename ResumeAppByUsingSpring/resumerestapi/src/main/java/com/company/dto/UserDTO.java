@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDTO {
-
+//dto - viewde yazmag istediyimiz seyleri dto vasitesile edirik
     private int id;
     private String name;
     private String surname;
